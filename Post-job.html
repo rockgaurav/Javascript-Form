@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" href="dist/fa/css/all.css">
+		<script src="Post-job.js"></script>
+	</head>
+	<body onload="showdata()">
+	<br>
+		<div class="container">
+			<div class="col-sm-12 text-center">
+				<h2>POST JOB</h2>
+			</div>
+			<br>
+			
+			<div class="row form-group">
+				<div class="col-sm-6">
+					<h4>Company Name</h4>
+					<select class="form-control" id="name">
+						<option value="">Choose Company</option>
+						<option value="1">IBM</option>
+						<option value="2">Wipro</option>
+					</select>
+				</div>
+				<div class="col-sm-6">
+					<h4>Job Title</h4>
+					<select class="form-control" id="title">
+						<option value="">Choose Title</option>
+						<option value="1">Manager</option>
+						<option value="2">Supervisor</option>
+					</select>
+				</div>
+			</div><!------------------2nd row end here--------------->
+			
+			<div class="row form-group">
+				<div class="col-sm-12">
+					<h4>Job Discription</h4>
+					<div class="panel panel-default">
+					
+						<div class="panel panel-heading"><!------------------panel-heading start here--------------->
+							<table>
+								<tr>
+									<td> <i class="fa fa-plus"></i>
+										<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+										  <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">JavaScript</a></li>
+										  </ul>
+										&nbsp
+										 <i class="fa fa-reply" style="color:#c9c4c4;"></i> 
+										&nbsp
+										 <i class="fa fa-share" style="color:#c9c4c4;"></i>
+										&nbsp
+										 Paragraph
+										 &nbsp&nbsp
+										 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+										  <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">JavaScript</a></li>
+										  </ul>
+										  &nbsp
+										  <i class="fa fa-bold"></i>
+										  &nbsp
+										  <i class="fa fa-italic"></i>
+										  <i class="fa fa-font"></i>
+											&nbsp
+										 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+										  <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">JavaScript</a></li>
+										  </ul>
+										  &nbsp
+										  <i class="fa fa-align-left"></i>
+										  &nbsp
+										  <i class="fa fa-align-center"></i>
+										  &nbsp
+										  <i class="fa fa-align-right"></i>
+										  &nbsp
+										  <i class="fa fa-align-justify"></i>
+										  &nbsp &nbsp
+										  <i class="fa fa-list-ul"></i>
+										  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+										  <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">JavaScript</a></li>
+										  </ul>
+										   &nbsp
+										  <i class="fa fa-list-ol"></i>
+										  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+										  <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+											<li><a href="#">HTML</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">JavaScript</a></li>
+										  </ul>
+										   &nbsp
+										  <i class="fa fa-outdent"></i>
+										  &nbsp
+										  <i class="fa fa-indent"></i>
+										  &nbsp
+										  <i class="fa fa-i-cursor"></i>
+										  &nbsp
+										  <i class="fa fa-question-circle"></i>
+									 </td>
+								</tr>
+							</table><!------------------table end here--------------->
+					</div><!------------------panel-heading end here--------------->
+					
+					<div class="panel-body" style="height:120px;"> </div>
+					
+					<div class="panel-footer text-right" style="height:35px;">
+						<h6  style="margin-top:auto;">0 WORDS POWERED BY TINY</h6>
+					</div>
+				</div>
+				</div>
+			</div><!------------------3rd row end here--------------->
+			
+			<div class="row form-group">
+				<div class="col-sm-3">
+					<h4>Min Experience</h4>
+					<input type="text" class="form-control" id="minexperience" placeholder="Experience">
+				</div>
+				<div class="col-sm-3">
+					<h4>Max Experience</h4>
+					<input type="text" class="form-control" id="maxexperience" placeholder="Experience">
+				</div>
+				<div class="col-sm-3">
+					<h4>Min Salary</h4>
+					<input type="text" class="form-control" id="minsalary" placeholder="Your Salary">
+				</div>
+				<div class="col-sm-3">
+					<h4>Max Salary</h4>
+					<input type="text" class="form-control" id="maxsalary" placeholder="Your Salary">
+				</div>
+			</div><!------------------4th row end here--------------->
+			
+			<div class="row form-group">
+				<div class="col-sm-3">
+					<h4>Vacancies</h4>
+					<input type="text" class="form-control" id="vacancies" placeholder="Experience">
+				</div>
+				<div class="col-sm-3">
+					<h4>City</h4>
+					<select class="form-control" id="city">
+						<option value="">Choose City</option>
+						<option value="1">Lucknow</option>
+						<option value="2">Delhi</option>
+					</select>
+				</div>
+				<div class="col-sm-3">
+					<h4>Open Date</h4>
+					<input type="Date" class="form-control" id="opendate">
+				</div>
+				<div class="col-sm-3">
+					<h4>Close Date</h4>
+					<input type="Date" class="form-control"  id="closedate">
+				</div>
+			</div><!------------------5th row end here--------------->
+			
+			<div class="row form-group">
+				<div class="col-sm-6">
+					<h4>Qualification</h4>
+					<input type="text" class="form-control" id="qualification" placeholder="Type c to view">
+				</div>
+				<div class="col-sm-6">
+					<h4>Search Keywords</h4>
+					<input type="text" class="form-control" id="search" placeholder="Type c to view">
+				</div>
+			</div><!------------------6th row end here--------------->
+			
+			<div class="col-sm-4">
+				<label>Active</label>
+				&nbsp
+				<input type="radio" name="radio" id="yes">
+				<caption>Yes</caption>
+				&nbsp
+				<input type="radio" name="radio" id="no">
+				<caption>No</caption>
+				<p id="radioerror"></p>
+			</div>
+			<div class="col-sm-8">
+				<button class="btn btn-success" type="submit" onclick="showdata()">Submit Now</button>
+				<button class="btn btn-danger" type="reset">Reset Fields</button>
+			</div>
+			
+		</div><!------------------container end here--------------->
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" href="dist/fa/css/all.css">
+		<script src="New-client.js"></script>
+	</head>
+	<body onload="showdata()">
+	<br>
+	<div class="container">
+		<div class="row form-group">
+			<div class="col-sm-12 text-center">
+			<h2>New Client</h2>
+			</div>
+		</div>
+			<br>
+		<div class="row form-group">
+			<div class="col-sm-12">
+				<button class="btn btn-primary"> <i class="fa fa-calculator"></i> Company List</button>
+			</div>
+		</div>
+		<br>
+		<div class="row form-group">
+			<div class="col-sm-4">
+				<h4>Company Name</h4>
+					<input type="text" class="form-control" id="name" placeholder="Company Name">
+			</div>
+			<div class="col-sm-4">
+				<h4>Contact Person</h4>
+				<input type="text" class="form-control" id="person" placeholder="Contact Person">
+			</div>
+			<div class="col-sm-4">
+				<h4>Enter Mobile</h4>
+				<input type="text" class="form-control" id="mobile" placeholder="Your Mobile No" maxlength="10">
+			</div><!-------------1st row end here------------->
+			
+		</div>
+		
+		<div class="row form-group">
+			<div class="col-sm-4">
+				<h4>Contact No </h4>
+				<input type="text" class="form-control" id="contact" placeholder="Contact No">
+			</div>
+			<div class="col-sm-4">
+				<h4>Website</h4>
+				<input type="text" class="form-control" id="website" placeholder="Website Name">
+			</div>
+			<div class="col-sm-4">
+				<h4>Enter Email</h4>
+				<input type="email" class="form-control" id="email" placeholder="Your email Id">
+			</div>
+		</div><!-------------2nd row end here------------->
+		
+		<div class="row form-group">
+			<div class="col-sm-4">
+				<h4>City</h4>
+				<input type="text" class="form-control" id="city" placeholder="Your City">
+			</div>
+			<div class="col-sm-4">
+				<h4>Profile</h4>
+				<input type="text" class="form-control" id="profile" placeholder="Profile">
+			</div>
+			<div class="col-sm-4">
+				<h4>Logo</h4>
+				<input type="file" class="form-control" id="logo">
+				
+			</div>
+		</div><!-------------3rd row end here------------->
+		
+		<div class="row form-group">
+			<div class="col-sm-4">
+				<h4>Address</h4>
+				<textarea class="form-control" id="address" placeholder="Address"></textarea>
+			</div>
+			<div class="col-sm-4">
+				<h4>Landmark</h4>
+				<input type="text" class="form-control" id="landmark" placeholder="Landmark">
+			</div>
+			<div class="col-sm-4">
+				<h4>Pincode</h4>
+				<input type="text" class="form-control" id="pincode" placeholder="Pincode">
+			</div>
+		</div><!-------------4th row end here------------->
+		
+		<div class="row form-group">
+			<div class="col-sm-12 text-center">
+				<label>Active</label>
+				&nbsp
+				<input type="radio" id="yes"> Yes
+				&nbsp
+				<input type="radio" id="no"> No
+					<p id="error">cdc</p>
+			</div>
+		</div><!-------------5th row end here------------->
+		
+		<div class="row form-group">
+			<div class="col-sm-12 text-center">
+				<button class="btn btn-success" type="submit" onclick="showdata()">Submit Now</button>
+				<button class="btn btn-danger" type="reset">Reset</button>
+			</div>
+		</div><!-------------6th row end here------------->
+	</div><!---------------container end here------------>
+	</body>
+</html>
